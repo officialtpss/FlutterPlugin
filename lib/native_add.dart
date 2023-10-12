@@ -10,7 +10,7 @@ import 'native_add_bindings_generated.dart';
 ///
 /// For very short-lived functions, it is fine to call them on the main isolate.
 /// They will block the Dart execution while running the native function, so
-/// only do this for native functions which are guaranteed to be short-lived.
+/// only do this for native functions which are guaranteed to be short-lived.check
 int sum(int a, int b) => _bindings.sum(a, b);
 
 /// A longer lived native function, which occupies the thread calling it.
